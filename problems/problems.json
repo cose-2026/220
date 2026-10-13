@@ -1,0 +1,122 @@
+{
+  "0": {
+    "title": "KESTREL lessons-learned report (fictional sample)",
+    "file": null,
+    "source": "Fictional, written for CoSE 220 — built into the notebook",
+    "default": "Lessons learned get written down, so they get learned.",
+    "questions": [
+      {
+        "kind": "answered",
+        "q": "How many requirements changed after the critical design review?",
+        "expect": "37 (page 2)."
+      },
+      {
+        "kind": "not answered",
+        "q": "What is the program's total contract value?",
+        "expect": "The report doesn't say. A good answer says so."
+      },
+      {
+        "kind": "tricky",
+        "q": "How many months did the schedule slip?",
+        "expect": "The report contradicts itself: the summary says four months (page 1), the timeline shows six (page 3). A good answer flags both."
+      }
+    ],
+    "decision": "A program manager starting Phase C needs to decide which lesson to act on first, using this report."
+  },
+  "1": {
+    "title": "NASA Systems Engineering Handbook — 6.2 Requirements Management",
+    "file": "1-traceability-nasa-se-handbook.pdf",
+    "source": "NASA SP-2016-6105 Rev 2 (public), pages 1 and 139–149",
+    "default": "Traceability is a spreadsheet someone updates before the review.",
+    "questions": [
+      {
+        "kind": "answered",
+        "q": "When should a requirement's traceability be recorded?",
+        "expect": "As each requirement is documented — not later (page 5)."
+      },
+      {
+        "kind": "not answered",
+        "q": "Which requirements management tool does NASA recommend?",
+        "expect": "None is named. Page 5 mentions only a requirements matrix or a modeling application."
+      },
+      {
+        "kind": "tricky",
+        "q": "Must every requirement trace to a parent requirement?",
+        "expect": "No: it can be self-derived if the next level up agrees. Otherwise the trace is flawed or the requirement is 'gold plating' (page 5)."
+      }
+    ],
+    "decision": "A NIWC systems engineer needs to decide whether an unparented requirement should be kept, re-traced or cut before the review, using this handbook."
+  },
+  "2": {
+    "title": "NASA OIG audit of NASA's lessons-learned process (IG-12-012)",
+    "file": "2-lessons-learned-nasa-oig.pdf",
+    "source": "NASA Office of Inspector General, IG-12-012 (public), pages 1–30",
+    "default": "Lessons learned get written down, so they get learned.",
+    "questions": [
+      {
+        "kind": "answered",
+        "q": "How many surveyed project managers contributed lessons to LLIS?",
+        "expect": "12 of 28, or 43 percent (page 5)."
+      },
+      {
+        "kind": "not answered",
+        "q": "Did LLIS use improve after NASA appointed a Chief Knowledge Officer?",
+        "expect": "The report doesn't say: it predates the appointment — a Chief Knowledge Officer 'will be assigned', due March 2013 (pages 7, 26)."
+      },
+      {
+        "kind": "tricky",
+        "q": "Does NASA require lessons learned before project closeout?",
+        "expect": "Not under the binding policy: NPR 7120.5D doesn't require them until closeout (page 5). A 2009 letter urged capturing them right after each effort (page 16), but it was informal and brought no measurable improvement (page 6)."
+      }
+    ],
+    "decision": "A program manager needs to decide when the team captures lessons — at each milestone or at closeout — using this audit."
+  },
+  "3": {
+    "title": "NIST AI Risk Management Framework 1.0",
+    "file": "3-ai-trust-nist-ai-rmf.pdf",
+    "source": "NIST AI 100-1, January 2023 (public), pages 1–24",
+    "default": "If the AI is right in the demo, it's ready for operators.",
+    "questions": [
+      {
+        "kind": "answered",
+        "q": "Do lab test results reflect operational risk?",
+        "expect": "Not necessarily — they may differ from risks that emerge in real-world settings (page 11)."
+      },
+      {
+        "kind": "not answered",
+        "q": "What accuracy threshold must an AI meet before deployment?",
+        "expect": "None is given: the RMF doesn't prescribe risk tolerance (page 12) and leaves threshold values to human judgment (page 17)."
+      },
+      {
+        "kind": "tricky",
+        "q": "If the AI is accurate in testing, is it trustworthy?",
+        "expect": "No. Valid and reliable is necessary but not sufficient — trust is only as strong as the weakest characteristic (page 17) — and accuracy must be paired with realistic test sets (page 19)."
+      }
+    ],
+    "decision": "A test-and-evaluation lead needs to make the go/no-go call on fielding an AI aid after a successful demo, using the NIST AI RMF."
+  },
+  "4": {
+    "title": "40 CFR 60 Subpart KKKK — stationary combustion turbines (2024 edition)",
+    "file": "4-turbine-emissions-40cfr60-kkkk.pdf",
+    "source": "Code of Federal Regulations, 2024 edition via govinfo.gov (public), all 16 pages",
+    "default": "The emissions rule we were permitted under is the one we'll always meet.",
+    "questions": [
+      {
+        "kind": "answered",
+        "q": "What NOx limit applies to a new natural-gas turbine above 850 MMBtu/h?",
+        "expect": "15 ppm at 15 percent O2, or 54 ng/J of useful output (0.43 lb/MWh) — Table 1, page 15."
+      },
+      {
+        "kind": "not answered",
+        "q": "What NOx limits does Subpart KKKKa set?",
+        "expect": "Not in this document: it is the 2024 edition, and Subpart KKKKa came later."
+      },
+      {
+        "kind": "tricky",
+        "q": "Is our turbine test stand exempt from KKKK NOx limits?",
+        "expect": "Test cells/stands are exempt from the whole subpart (page 2); R&D turbines can be exempted from the NOx limit only by petition, case by case (page 10)."
+      }
+    ],
+    "decision": "A gas-turbine combustion engineer needs to decide whether a new large natural-gas unit's NOx design margin meets the federal limit, using this regulation."
+  }
+}
